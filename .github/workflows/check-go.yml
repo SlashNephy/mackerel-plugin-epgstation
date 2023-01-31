@@ -14,7 +14,6 @@ on:
 
 jobs:
   build:
-    if: github.event_name != 'push'
     uses: SlashNephy/.github/.github/workflows/go-run.yml@master
     permissions:
       contents: 'read'
