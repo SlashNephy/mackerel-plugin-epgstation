@@ -48,20 +48,24 @@ func (u plugin) GraphDefinition() map[string]mp.Graphs {
 			Unit:  mp.UnitInteger,
 			Metrics: []mp.Metrics{
 				{
-					Name:  keyStreamsLiveStream,
-					Label: "Live Stream",
+					Name:    keyStreamsLiveStream,
+					Label:   "Live Stream",
+					Stacked: true,
 				},
 				{
-					Name:  keyStreamsLiveHLS,
-					Label: "Live HLS",
+					Name:    keyStreamsLiveHLS,
+					Label:   "Live HLS",
+					Stacked: true,
 				},
 				{
-					Name:  keyStreamsRecordedStream,
-					Label: "Recorded Stream",
+					Name:    keyStreamsRecordedStream,
+					Label:   "Recorded Stream",
+					Stacked: true,
 				},
 				{
-					Name:  keyStreamsRecordedHLS,
-					Label: "Recorded HLS",
+					Name:    keyStreamsRecordedHLS,
+					Label:   "Recorded HLS",
+					Stacked: true,
 				},
 			},
 		},
@@ -70,20 +74,24 @@ func (u plugin) GraphDefinition() map[string]mp.Graphs {
 			Unit:  mp.UnitInteger,
 			Metrics: []mp.Metrics{
 				{
-					Name:  keyReserveNormal,
-					Label: "Normal",
+					Name:    keyReserveNormal,
+					Label:   "Normal",
+					Stacked: true,
 				},
 				{
-					Name:  keyReserveSkips,
-					Label: "Skips",
+					Name:    keyReserveSkips,
+					Label:   "Skips",
+					Stacked: true,
 				},
 				{
-					Name:  keyReserveOverlaps,
-					Label: "Overlaps",
+					Name:    keyReserveOverlaps,
+					Label:   "Overlaps",
+					Stacked: true,
 				},
 				{
-					Name:  keyReserveConflicts,
-					Label: "Conflicts",
+					Name:    keyReserveConflicts,
+					Label:   "Conflicts",
+					Stacked: true,
 				},
 			},
 		},
@@ -102,12 +110,14 @@ func (u plugin) GraphDefinition() map[string]mp.Graphs {
 			Unit:  mp.UnitInteger,
 			Metrics: []mp.Metrics{
 				{
-					Name:  keyEncodeRunning,
-					Label: "Running",
+					Name:    keyEncodeRunning,
+					Label:   "Running",
+					Stacked: true,
 				},
 				{
-					Name:  keyEncodeWaiting,
-					Label: "Waiting",
+					Name:    keyEncodeWaiting,
+					Label:   "Waiting",
+					Stacked: true,
 				},
 			},
 		},
@@ -116,16 +126,18 @@ func (u plugin) GraphDefinition() map[string]mp.Graphs {
 			Unit:  mp.UnitBytes,
 			Metrics: []mp.Metrics{
 				{
-					Name:  keyStoragesAvailable,
-					Label: "Available",
-				},
-				{
-					Name:  keyStoragesUsed,
-					Label: "Used",
-				},
-				{
 					Name:  keyStoragesTotal,
 					Label: "Total",
+				},
+				{
+					Name:    keyStoragesAvailable,
+					Label:   "Available",
+					Stacked: true,
+				},
+				{
+					Name:    keyStoragesUsed,
+					Label:   "Used",
+					Stacked: true,
 				},
 			},
 		},
