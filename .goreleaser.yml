@@ -1,0 +1,16 @@
+builds:
+  - binary: mackerel-plugin-epgstation
+    goos:
+      - linux
+    goarch:
+      - amd64
+      - arm64
+
+archives:
+  - format: zip
+    name_template: "{{ .ProjectName }}_{{ .Os }}_{{ .Arch }}"
+
+release:
+  github:
+    owner: SlashNephy
+    name: mackerel-plugin-epgstation
