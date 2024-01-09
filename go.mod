@@ -11,5 +11,5 @@ require (
 require (
 	github.com/mackerelio/golib v1.2.1 // indirect
 	golang.org/x/sys v0.1.0 // indirect
-	golang.org/x/text v0.3.7 // indirect
+	golang.org/x/text v0.3.8 // indirect
 )
