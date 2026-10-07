@@ -3,7 +3,7 @@ module github.com/SlashNephy/mackerel-plugin-epgstation
 go 1.25.0
 
 require (
-	github.com/goccy/go-json v0.10.6
+	github.com/goccy/go-json v0.11.2
 	github.com/jessevdk/go-flags v1.6.1
 	github.com/mackerelio/go-mackerel-plugin v0.1.6
 )
